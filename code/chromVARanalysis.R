@@ -14,13 +14,14 @@ install.packages("knitr")
 install.packages("rmarkdown")
 install.packages("tidyverse")
 
-devtools::install_github("GreenleafLab/chromVAR")
-devtools::install_github("caleblareau/BuenColors")
-
 source("https://bioconductor.org/biocLite.R")
 biocLite("BiocParallel")
 biocLite("SummarizedExperiment")
-bioclite("BSgenome.Hsapiens.UCSC.hg19")
+biocLite("BSgenome.Hsapiens.UCSC.hg19")
+
+devtools::install_github("GreenleafLab/motifmatchr")
+devtools::install_github("GreenleafLab/chromVAR")
+devtools::install_github("caleblareau/BuenColors")
 
 #' ### The goal of this document is to produce several interactive plots for ATAC data
 #+ cache = FALSE, message=FALSE, warning=FALSE, echo = TRUE, eval = TRUE
